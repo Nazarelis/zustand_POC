@@ -1,4 +1,5 @@
 import { useCounterStore } from "../store/store-counter";
+import './style-components.css'
 
 function ComponenteUno() {
 
@@ -7,10 +8,15 @@ function ComponenteUno() {
 
 
   return (
-    <>
-    <h1>Counter {count}</h1>
-    <button onClick={increment}>Incrementar</button>
-    </>
+    <div className="component">
+      <div className="component-title">
+        <h2>Primer componente: {count}</h2>
+      </div>
+      <div className="component-button">
+        <button onClick={increment}>Incrementar</button>
+      </div>
+    
+    </div>
   )
 
 }

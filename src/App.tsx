@@ -9,9 +9,23 @@ function App() {
 
   return (
     <>
-    <ComponenteUno/>
-    <h1>Contador: {globalStateCount}</h1>
-    <ComponenteDos/>
+    <div className="tittle-app">
+      <h1 >Zustand App</h1>
+    </div>
+    
+    <div className="container-components">
+      <div>
+      <ComponenteUno/>
+      </div>
+      <div>
+      <h2>Estado actual de la store: {globalStateCount}</h2>
+
+      </div>
+      <div>
+      <ComponenteDos/>
+      </div>
+    </div>
+
     </>
 
   )
